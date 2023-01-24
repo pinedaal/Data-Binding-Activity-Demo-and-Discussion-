@@ -1,0 +1,25 @@
+<!-- <hello name="{{ name }}"></hello> -->
+<h1>
+  {{ appName }}
+</h1>
+
+<input type="text" [value]="clientName" />
+
+<p [style.color]="myColor">Text color is styled using style binding</p>
+
+<p [class]="appliedCSSClass">This text applied the myClass property.</p>
+
+<p [class.blue]="notappliedCSSClass">While the line does not..</p>
+
+<!-- Two-way data binding -->
+<input [(ngModel)]="myName" placeholder="Enter your name" />
+<p>Hello. {{ myName }} !!</p>
+
+<!-- Event Binding -->
+<h2>Event Binding</h2>
+<button (click)="showData($event)">Click here</button>
+
+<!-- Another Event Binding
+<h2>Another Event Binding</h2>
+<button on-click="showData($event)">Click here</button>
+-->
